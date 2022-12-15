@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zk test</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      function refreshRem() {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 750 * 100 + 'px';
+      }
+      refreshRem()
+      window.addEventListener("resize", refreshRem, false);
+    })()
+  </script>
+  <div id="root"></div>
+</body>
+
+</html>
